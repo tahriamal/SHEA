@@ -1,0 +1,30 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+Model:
+	node | configuration |relationship ;
+configuration:
+	'configuration'	name=ID '{'
+	components+=component*
+	'}';
+node:
+'node'	name=ID;	
+
+component:
+	'component' name=ID 
+	relationship+=relationship*;
+relationship:
+	hostedBy | notHostedBy | collocated | separated
+;
+hostedBy:
+	 'hostedBy' node
+;
+notHostedBy:
+	'nothostedBy' node ;
+collocated :
+	'collocated' component
+;
+separated:
+	'separated' component
+;
