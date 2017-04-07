@@ -1,0 +1,44 @@
+#1: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#2: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#3: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#4: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#5: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#6: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+#7: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#8: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#9: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#10: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#11: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#12: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+#13: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#14: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#15: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#16: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#17: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#18: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+#19: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#20: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#21: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#22: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#23: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#24: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+#25: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#26: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#27: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#28: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#29: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#30: MotionDetection LiveStreaming Browser Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+#31: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG SVGGR 
+#32: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format MPEG 
+#33: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera VideoTvCard Flow Format SVGGR 
+#34: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG SVGGR 
+#35: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format MPEG 
+#36: MotionDetection LiveStreaming SmartPhone Storage [ Storage.DataBase = 1 ] [ Storage.CPU = 300 ] [ Storage.RAM = 128 ] MainCapture Flux Input UsbCamera Flow Format SVGGR 
+36
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.776s
+[INFO] Finished at: Mon Dec 14 10:23:54 CET 2015
+[INFO] Final Memory: 7M/122M
+[INFO] ------------------------------------------------------------------------

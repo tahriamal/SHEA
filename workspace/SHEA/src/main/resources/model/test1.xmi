@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore">
+  <constraints xsi:type="featuremodel:HostedBy" from="//@rootFeature/@subFeatures.0" to="//@rootFeature/@nodeFeature.0"/>
+  <constraints xsi:type="featuremodel:Excludes" from="//@rootFeature/@subFeatures.0/@subFeatures.2/@variants.1" to="//@rootFeature/@subFeatures.0/@subFeatures.1/@variants.0"/>
+  <constraints xsi:type="featuremodel:Implies" from="//@rootFeature/@subFeatures.0/@subFeatures.2/@variants.0" to="//@rootFeature/@subFeatures.1/@variants.0"/>
+  <constraints xsi:type="featuremodel:NotHostedBy" extF="//@rootFeature/@nodeFeature.0" From="//@rootFeature/@subFeatures.2"/>
+  <rootFeature name="App">
+    <subFeatures name="MotionDetection">
+      <subFeatures name="Decoding">
+        <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      </subFeatures>
+      <subFeatures xsi:type="featuremodel:Exclusive" name="Recording">
+        <featureCardinality cardinalityMax="1"/>
+        <variants name="IBR">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+        <variants name="liveRecord">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <subFeatures xsi:type="featuremodel:Alternative" name="Flow">
+        <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+        <variants name="MPEG">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+        <variants name="SVGGR">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Exclusive" name="LiveStreaming">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="BuiltIn">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="StanAlone">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <subFeatures name="Storage">
+      <featureCardinality cardinalityMax="1"/>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    <nodeFeature name="HAB">
+      <NodeCardinalities cardinalityMax="1"/>
+    </nodeFeature>
+  </rootFeature>
+</featuremodel:FeatureModel>

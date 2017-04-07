@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xmlns:type="http://fr.saloon.model.type" xsi:schemaLocation="http://fr.saloon.model.featuremodel ../SaloonAmal/src/main/resources/metamodel/FeatureModel.ecore http://fr.saloon.model.type ../SaloonAmal/src/main/resources/metamodel/Type.ecore">
+  <constraints xsi:type="featuremodel:Implies" from="//@rootFeature/@subFeatures.1/@variants.0" to="//@rootFeature/@subFeatures.2/@variants.0"/>
+  <rootFeature name="FaceRecognition">
+    <subFeatures xsi:type="featuremodel:Exclusive" name="ThinClient">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1" configValue="1"/>
+      <variants name="Browser">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="SmartPhone">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Alternative" name="FaceMatcher">
+      <attributes name="Server">
+        <value xsi:type="type:StringValue" value="Apache"/>
+      </attributes>
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="PAC">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="Bayesian">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="LDA">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Exclusive" name="FaceExtractor">
+      <attributes name="DataBase">
+        <value xsi:type="type:StringValue" value="MangoDB"/>
+      </attributes>
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="Low">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <featureCardinality cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

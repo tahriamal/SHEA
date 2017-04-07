@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?><featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cardSemantics="http://fr.saloon.model.cardSemantics" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xsi:schemaLocation="http://fr.saloon.model.cardSemantics ../../metamodel/CardSemantics.ecore http://fr.saloon.model.featuremodel ../../metamodel/FeatureModel.ecore">
+<!-- featuremodel:FeatureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:featuremodel="http://fr.saloon.model.featuremodel"
+    xmlns:type="http://fr.saloon.model.type"
+    xsi:schemaLocation="http://fr.saloon.model.featuremodel src/main/resources/metamodel/FeatureModel.ecore http://fr.saloon.model.type src/main/resources/metamodel/Type.ecore">
+  -->
+  <constraints
+      xsi:type="featuremodel:Colocated"
+      from="//@rootFeature/@subFeatures.0"
+      fromAgain="//@rootFeature/@subFeatures.1"/>
+  <rootFeature
+      name="App">
+    <subFeatures
+        name="1">
+         <featureCardinality
+          cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures
+        name="2">
+      <featureCardinality
+          cardinalityMax="1"/>
+    </subFeatures>
+    <featureCardinality
+        cardinalityMin="1"
+        cardinalityMax="1"/>
+ </rootFeature>
+</featuremodel:FeatureModel>

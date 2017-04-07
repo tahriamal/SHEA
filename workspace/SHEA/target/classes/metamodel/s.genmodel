@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ASaloon/src" modelPluginID="ASaloon" modelName="S"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>FeatureModel.ecore</foreignModel>
+  <foreignModel>Type.ecore</foreignModel>
+  <genPackages prefix="FeatureModel" disposableProviderFactory="true" ecorePackage="FeatureModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FeatureModel.ecore#//ComparisonOperator">
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//ComparisonOperator/equal"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//ComparisonOperator/geq"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//ComparisonOperator/gt"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//ComparisonOperator/leq"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//ComparisonOperator/lt"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FeatureModel.ecore#//Operator">
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//Operator/select"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//Operator/add"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//Operator/remove"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//Operator/multiply"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//Operator/divide"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FeatureModel.ecore#//LogicalOperator">
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//LogicalOperator/void"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//LogicalOperator/and"/>
+      <genEnumLiterals ecoreEnumLiteral="FeatureModel.ecore#//LogicalOperator/or"/>
+    </genEnums>
+    <genClasses ecoreClass="FeatureModel.ecore#//FeatureModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//FeatureModel/constraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//FeatureModel/rootFeature"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//FMElement"/>
+    <genClasses ecoreClass="FeatureModel.ecore#//Feature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Feature/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Feature/subFeatures"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Feature/featureCardinality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Feature/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Feature/nodeFeature"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Exclusive"/>
+    <genClasses ecoreClass="FeatureModel.ecore#//Alternative">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Alternative/variants"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="FeatureModel.ecore#//Cardinality">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Cardinality/cardinalityMin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Cardinality/cardinalityMax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Cardinality/configValue"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Attribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Attribute/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="FeatureModel.ecore#//FMConstraint"/>
+    <genClasses image="false" ecoreClass="FeatureModel.ecore#//BooleanConstraint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//BooleanConstraint/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//BooleanConstraint/to"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//FeatCardinality"/>
+    <genClasses ecoreClass="FeatureModel.ecore#//Implies"/>
+    <genClasses ecoreClass="FeatureModel.ecore#//Excludes"/>
+    <genClasses ecoreClass="FeatureModel.ecore#//Requires">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Requires/conditions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Requires/action"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Requires/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Functional">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Functional/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Functional/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Functional/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Functional/value"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Comparison">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Comparison/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Comparison/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//Comparison/type"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Operation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Operation/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//RangeOperation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//RangeOperation/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//RangeOperation/max"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//RangeOperation/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//ValueOperation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//ValueOperation/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//ValueOperation/value"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Colocated">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Colocated/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Colocated/fromAgain"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//NodeFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FeatureModel.ecore#//NodeFeature/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NodeFeature/NodeAttributes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NodeFeature/NodeCardinalities"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NodeFeature/HostedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NodeFeature/NotHostedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//HostedBy">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//HostedBy/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//HostedBy/to"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//Separated">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Separated/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//Separated/to"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//ResourceVerification">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//ResourceVerification/fromAtt"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//ResourceVerification/extF"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//NotHostedBy">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NotHostedBy/extF"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FeatureModel.ecore#//NotHostedBy/From"/>
+    </genClasses>
+    <genClasses ecoreClass="FeatureModel.ecore#//NodeFeatureElement"/>
+  </genPackages>
+  <genPackages prefix="Type" disposableProviderFactory="true" ecorePackage="Type.ecore#/">
+    <genClasses ecoreClass="Type.ecore#//TypeRepository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Type.ecore#//TypeRepository/dataTypes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Type.ecore#//Value"/>
+    <genClasses ecoreClass="Type.ecore#//IntValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//IntValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Type.ecore#//StringValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//StringValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Type.ecore#//BooleanValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//BooleanValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Type.ecore#//FloatValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//FloatValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Type.ecore#//EnumListValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Type.ecore#//EnumListValue/values"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Type.ecore#//EnumListValue/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Type.ecore#//NumericValue"/>
+    <genClasses ecoreClass="Type.ecore#//RangeValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//RangeValue/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//RangeValue/max"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Type.ecore#//RangeValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Type.ecore#//EnumValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Type.ecore#//EnumValue/id"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

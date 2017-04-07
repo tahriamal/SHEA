@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FeatureModel -->
+      <package
+            uri="http://fr.saloon.model.featuremodel"
+            class="featureModel.FeatureModelPackage"
+            genModel="src/main/resources/metamodel/FeatureModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FeatureModel161216 -->
+      <package
+            uri="http://example.org/EFM"
+            class="EFM.EFMPackage"
+            genModel="src/main/resources/metamodel/FeatureModel161216.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://fr.saloon.model.type"
+            class="type.TypePackage"
+            genModel="src/main/resources/metamodel/Type.genmodel"/>
+   </extension>
+
+</plugin>

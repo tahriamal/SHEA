@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel">
+  <constraints xsi:type="featuremodel:Implies" from="//@rootFeature/@subFeatures.0/@subFeatures.0" to="//@rootFeature/@subFeatures.1/@subFeatures.0"/>
+  <rootFeature name="Root">
+    <subFeatures name="v00">
+      <subFeatures name="v10">
+        <featureCardinality cardinalityMax="4"/>
+      </subFeatures>
+      <featureCardinality cardinalityMax="4"/>
+    </subFeatures>
+    <subFeatures name="v01">
+      <subFeatures name="v11">
+        <featureCardinality cardinalityMax="4"/>
+      </subFeatures>
+      <featureCardinality cardinalityMax="3"/>
+    </subFeatures>
+    <subFeatures name="v02">
+      <featureCardinality cardinalityMax="4"/>
+    </subFeatures>
+    <subFeatures name="v03">
+      <featureCardinality cardinalityMax="4"/>
+    </subFeatures>
+    <subFeatures name="v04">
+      <featureCardinality cardinalityMax="4"/>
+    </subFeatures>
+    <subFeatures name="v05">
+      <featureCardinality cardinalityMax="3"/>
+    </subFeatures>
+    <subFeatures name="v06">
+      <featureCardinality cardinalityMax="4"/>
+    </subFeatures>
+    <subFeatures name="v07">
+      <featureCardinality cardinalityMax="3"/>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

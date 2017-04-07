@@ -1,0 +1,12 @@
+#1: App Ba 
+#2: App 
+#3: App Aa [ Aa.CPU = 300 ] [ Aa.RAM = 200 ] [ Aa.DataBase = 1 ] Ba 
+#4: App Aa [ Aa.CPU = 300 ] [ Aa.RAM = 200 ] [ Aa.DataBase = 1 ] 
+4
+Total execution time: 606ms
+#1: App Ba 
+#2: App 
+#3: App Aa [ Aa.CPU = 300 ] [ Aa.RAM = 200 ] [ Aa.DataBase = 1 ] Ba 
+#4: App Aa [ Aa.CPU = 300 ] [ Aa.RAM = 200 ] [ Aa.DataBase = 1 ] 
+4
+Total execution time: 449ms

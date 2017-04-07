@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:featuremodel="http://fr.saloon.model.featuremodel"
+    xmlns:type="http://fr.saloon.model.type"
+    xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore http://fr.saloon.model.type ../metamodel/Type.ecore">
+  <constraints
+      xsi:type="featuremodel:Requires">
+    <conditions
+        xsi:type="featuremodel:RangeOperation"
+        feature="//@rootFeature/@variants.0"
+        attribute="//@rootFeature/@variants.0/@attributes.0"/>
+  </constraints>
+  <rootFeature
+      xsi:type="featuremodel:Alternative"
+      name="Flow Format">
+    <featureCardinality
+        cardinalityMin="1"
+        cardinalityMax="1"/>
+    <variants
+        name="MPEG">
+      <attributes
+          name="QoS">
+        <value
+            xsi:type="type:EnumListValue">
+          <values
+              value="1"
+              id="QoS1"/>
+          <values
+              value="2"
+              id="QoS2"/>
+        </value>
+      </attributes>
+      <attributes
+          name="Library">
+        <value
+            xsi:type="type:EnumListValue">
+          <values
+              value="1"
+              id="VLI"/>
+          <values
+              value="2"
+              id="MP4v2"/>
+        </value>
+      </attributes>
+      <featureCardinality
+          cardinalityMax="1"/>
+    </variants>
+    <variants
+        name="SVGGR">
+      <featureCardinality
+          cardinalityMax="1"/>
+    </variants>
+  </rootFeature>
+</featuremodel:FeatureModel>

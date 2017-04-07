@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xmlns:type="http://fr.saloon.model.type" xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore http://fr.saloon.model.type ../metamodel/Type.ecore">
+  <constraints xsi:type="featuremodel:ResourceVerification" fromAtt="//@rootFeature/@subFeatures.0/@attributes.0 //@rootFeature/@nodeFeature.0/@NodeAttributes.0" extF="//@rootFeature/@nodeFeature.0/@NodeAttributes.0"/>
+  <rootFeature name="res">
+    <subFeatures name="a">
+      <attributes name="CPUa">
+        <value xsi:type="type:IntValue" value="20"/>
+      </attributes>
+      <featureCardinality cardinalityMax="1"/>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    <nodeFeature name="node">
+      <NodeAttributes name="CPUnode">
+        <value xsi:type="type:IntValue" value="20"/>
+      </NodeAttributes>
+      <NodeCardinalities cardinalityMin="1" cardinalityMax="1"/>
+    </nodeFeature>
+  </rootFeature>
+</featuremodel:FeatureModel>

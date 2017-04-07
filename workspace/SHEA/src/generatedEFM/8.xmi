@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?><featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cardSemantics="http://fr.saloon.model.cardSemantics" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xsi:schemaLocation="http://fr.saloon.model.cardSemantics ../../metamodel/CardSemantics.ecore http://fr.saloon.model.featuremodel ../../metamodel/FeatureModel.ecore">
+<rootFeature name="RootFeature"><featureCardinality cardinalityMax="1" cardinalityMin="1"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+<subFeatures  name="00">
+<featureCardinality cardinalityMax="1" cardinalityMin="0"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+</subFeatures>
+<subFeatures  name="01">
+<featureCardinality cardinalityMax="1" cardinalityMin="0"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+</subFeatures>
+<subFeatures  name="02">
+<featureCardinality cardinalityMax="1" cardinalityMin="0"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+</subFeatures>
+<subFeatures  name="03">
+<featureCardinality cardinalityMax="1" cardinalityMin="0"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+</subFeatures>
+<subFeatures  name="04">
+<featureCardinality cardinalityMax="1" cardinalityMin="0"><level xsi:type="cardSemantics:Global" href="../CardSemantics.xmi#//@levels.0"/></featureCardinality>
+</subFeatures>
+</rootFeature>
+</featuremodel:FeatureModel>

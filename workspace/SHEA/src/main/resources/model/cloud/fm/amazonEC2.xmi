@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:featuremodel="http://fr.saloon.model.featuremodel"
+    xmlns:type="http://fr.saloon.model.type"
+    xsi:schemaLocation="http://fr.saloon.model.featuremodel ../../../metamodel/FeatureModel.ecore http://fr.saloon.model.type ../../../metamodel/Type.ecore">
+  <rootFeature
+      name="AmazonEC2">
+    <attributes
+        name="deploymentModel">
+      <value
+          xsi:type="type:StringValue"
+          value="Public"/>
+    </attributes>
+    <attributes
+        name="serviceModel">
+      <value
+          xsi:type="type:StringValue"
+          value="IaaS"/>
+    </attributes>
+    <subFeatures
+        name="Virtual Machine">
+      <featureCardinality
+          cardinalityMin="1"
+          cardinalityMax="-1"/>
+    </subFeatures>
+    <subFeatures
+        name="Pricing Model">
+      <subFeatures
+          name="Per Hour">
+        <featureCardinality
+            cardinalityMin="1"
+            cardinalityMax="1"/>
+      </subFeatures>
+      <featureCardinality
+          cardinalityMin="1"
+          cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures
+        name="Services">
+      <subFeatures
+          name="Amazon VPC">
+        <subFeatures
+            name="VPN Connection">
+          <featureCardinality
+              cardinalityMin="1"
+              cardinalityMax="1"/>
+        </subFeatures>
+        <featureCardinality
+            cardinalityMax="5"/>
+      </subFeatures>
+      <subFeatures
+          name="Auto Scaling">
+        <featureCardinality
+            cardinalityMax="1"/>
+      </subFeatures>
+      <subFeatures
+          xsi:type="featuremodel:Alternative"
+          name="Amazon Cloud Watch">
+        <featureCardinality
+            cardinalityMax="1"/>
+        <variants
+            name="Detailed">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+        <variants
+            name="Basic">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+        <variants
+            name="Custom">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <featureCardinality
+          cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures
+        xsi:type="featuremodel:Exclusive"
+        name="Location">
+      <featureCardinality
+          cardinalityMin="1"
+          cardinalityMax="1"/>
+      <variants
+          name="EU">
+        <featureCardinality
+            cardinalityMax="1"/>
+      </variants>
+      <variants
+          name="US East">
+        <featureCardinality
+            cardinalityMax="1"/>
+      </variants>
+      <variants
+          name="US (West) Oregon">
+        <featureCardinality
+            cardinalityMax="1"/>
+      </variants>
+      <variants
+          name="US West (Northern California) ">
+        <featureCardinality
+            cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <featureCardinality
+        cardinalityMin="1"
+        cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

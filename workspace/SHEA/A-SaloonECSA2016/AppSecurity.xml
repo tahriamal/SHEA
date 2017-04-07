@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xmlns:type="http://fr.saloon.model.type" >
+  <constraints xsi:type="featuremodel:Implies" from="//@rootFeature/@subFeatures.0/@subFeatures.1/@variants.0" to="//@rootFeature/@subFeatures.0/@subFeatures.2/@variants.1"/>
+  <constraints xsi:type="featuremodel:Colocated" from="//@rootFeature/@subFeatures.2/@variants.1" fromAgain="//@rootFeature/@subFeatures.0/@subFeatures.1"/>
+  <rootFeature name="SecurityApp">
+    <subFeatures name="MotionDetection">
+      <subFeatures name="FlowDecoding">
+        <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      </subFeatures>
+      <subFeatures xsi:type="featuremodel:Exclusive" name="Recording">
+        <featureCardinality cardinalityMax="1"/>
+        <variants name="LiveRecord">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+        <variants name="IntervalBasedRecord">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <subFeatures xsi:type="featuremodel:Alternative" name="Flow">
+        <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+        <variants name="MPEG">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+        <variants name="SVGGR">
+          <featureCardinality cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures name="FaceRecognition">
+      <featureCardinality cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Exclusive" name="LiveStreaming">
+      <attributes name="Server">
+        <value xsi:type="type:StringValue" value="Apache"/>
+      </attributes>
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="Built-in">
+        <attributes name="CPU">
+          <value xsi:type="type:IntValue" value="70"/>
+        </attributes>
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="stand-alone">
+        <attributes name="CPU">
+          <value xsi:type="type:IntValue" value="120"/>
+        </attributes>
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

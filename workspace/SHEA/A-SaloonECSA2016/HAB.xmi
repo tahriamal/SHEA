@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore">
+  <constraints xsi:type="featuremodel:Requires">
+    <conditions xsi:type="featuremodel:RangeOperation" feature="//@rootFeature/@subFeatures.3" min="2" max="2"/>
+    <action feature="//@rootFeature/@subFeatures.2"/>
+  </constraints>
+  <rootFeature name="HAB">
+    <subFeatures name="VAMPW">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures name="VAMPC">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures name="LoadBalancer">
+      <featureCardinality cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Exclusive" name="Server">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="Apache">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="Jonas">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Alternative" name="Language">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="Java">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="Python">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Exclusive" name="DataBase">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+      <variants name="MongoBD">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="MySQL">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="5"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

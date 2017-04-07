@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:featuremodel="http://fr.saloon.model.featuremodel"
+    xmlns:type="http://fr.saloon.model.type"
+    xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore http://fr.saloon.model.type ../metamodel/Type.ecore">
+  <rootFeature
+      name="VideoSurveillance">
+    <subFeatures
+        name="Control Admittance">
+      <featureCardinality
+          cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures
+        name="Motion Detection">
+      <attributes
+          name="OS">
+        <value
+            xsi:type="type:StringValue"
+            value="Raspbian"/>
+      </attributes>
+      <subFeatures
+          name="Live Streaming">
+        <attributes
+            name="Server">
+          <value
+              xsi:type="type:StringValue"
+              value="Apache"/>
+        </attributes>
+        <featureCardinality
+            cardinalityMax="1"/>
+      </subFeatures>
+      <subFeatures
+          xsi:type="featuremodel:Exclusive"
+          name="Video Input">
+        <featureCardinality
+            cardinalityMin="1"
+            cardinalityMax="1"/>
+        <variants
+            name="CameraUsb">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+        <variants
+            name="TV Video Camera">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <subFeatures
+          xsi:type="featuremodel:Alternative"
+          name="Image Format">
+        <featureCardinality
+            cardinalityMin="1"
+            cardinalityMax="1"/>
+        <variants
+            name="MPEG">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+        <variants
+            name="SVGGRS">
+          <featureCardinality
+              cardinalityMax="1"/>
+        </variants>
+      </subFeatures>
+      <subFeatures
+          name="Image Storage">
+        <attributes
+            name="DataBase">
+          <value
+              xsi:type="type:StringValue"
+              value="MongoDB"/>
+        </attributes>
+        <featureCardinality
+            cardinalityMin="1"
+            cardinalityMax="1"/>
+      </subFeatures>
+      <featureCardinality
+          cardinalityMin="1"
+          cardinalityMax="1"/>
+    </subFeatures>
+    <featureCardinality
+        cardinalityMin="1"
+        cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>

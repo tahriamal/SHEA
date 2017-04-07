@@ -1,0 +1,27 @@
+HABConfig 1 {
+MotionDetection
+FlowDecoding
+Recording {IntervalBasedRecord }
+Flow {MPEG,SVGGR}
+FaceRecognition 
+LiveStreaming [ Server = 1 ] { stand-alone }}
+HABConfig 2{
+MotionDetection
+FlowDecoding
+Recording {IntervalBasedRecord }
+Flow {MPEG,SVGGR}
+LiveStreaming [ Server = 1 ] { stand-alone }}
+HABConfig 3 {
+MotionDetection
+FlowDecoding
+Recording {IntervalBasedRecord }
+Flow {MPEG}
+FaceRecognition 
+LiveStreaming [ Server = 1 ] { stand-alone }}
+HABConfig 4{
+MotionDetection
+FlowDecoding
+Recording {IntervalBasedRecord }
+Flow {MPEG}
+LiveStreaming [ Server = 1 ] { stand-alone }}
+

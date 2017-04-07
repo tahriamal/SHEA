@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:featuremodel="http://fr.saloon.model.featuremodel" xmlns:type="http://fr.saloon.model.type" xsi:schemaLocation="http://fr.saloon.model.featuremodel ../metamodel/FeatureModel.ecore http://fr.saloon.model.type ../metamodel/Type.ecore">
+  <rootFeature name="HAB">
+    <attributes name="OS">
+      <value xsi:type="type:StringValue" value="Raspbian"/>
+    </attributes>
+    <attributes name="CPU">
+      <value xsi:type="type:StringValue" value="900"/>
+    </attributes>
+    <attributes name="RAM">
+      <value xsi:type="type:StringValue" value="1024"/>
+    </attributes>
+    <subFeatures name="Apache">
+      <featureCardinality cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures name="VAMPWrappers">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures name="VAMPConfig">
+      <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+    </subFeatures>
+    <subFeatures xsi:type="featuremodel:Alternative" name="Library">
+      <featureCardinality cardinalityMax="1"/>
+      <variants name="PIL">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="VLI">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+      <variants name="JDK7">
+        <featureCardinality cardinalityMax="1"/>
+      </variants>
+    </subFeatures>
+    <featureCardinality cardinalityMin="1" cardinalityMax="1"/>
+  </rootFeature>
+</featuremodel:FeatureModel>
